@@ -1,2 +1,2 @@
 # SnazzyPawsGrooming
-Dog groomin g services
+Dog grooming services

@@ -155,6 +155,24 @@ nav {
   cursor: pointer;
 }
 
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block; /* Show hamburger on mobile */
+  }
+
+  .nav-links {
+    display: none; /* Hide links by default on mobile */
+    width: 100%;
+    flex-direction: column;
+  }
+
+  /* When the checkbox is checked, display the menu links */
+  .nav-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+}
+
 /* ==========================================================================
    5. HOME PAGE STYLES (index.html)
    ========================================================================== */

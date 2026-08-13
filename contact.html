@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Contact Us - Snazzy Paws Grooming</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header>
     <nav>
       <div class="logo">Snazzy Paws Grooming</div>
-      <!-- Use a checkbox and label for pure CSS toggling -->
-      <input type="checkbox" id="nav-toggle" class="nav-toggle">
-      <label for="nav-toggle" class="hamburger-menu">☰</label>
+      <!-- Use a checkbox and label for pure CSS toggling instead of functional JS[cite: 10]-->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu input">
+      <!--ACCESSIBILITY: CSS with .visually-hidden class. Hide elements, readable to screen readers[cite: 10]-->
+      <label for="nav-toggle" class="hamburger-menu">
+  <span class="visually-hidden">Toggle navigation menu</span>☰</label>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
@@ -27,7 +29,7 @@
     <section class="contact-container">
       <!-- Operational Details -->
       <div class="contact-details">
-	<h1>Contact Us</h1>
+        <h1>Contact Us</h1>
         <h2>Contact Details</h2>
         <p><strong>Address:</strong> 123 Main Street, Hamilton</p>
         <p><strong>Phone:</strong> <a href="tel:071234567">07 123 4567</a></p>
@@ -56,11 +58,11 @@
       <div class="map-container">
         <iframe 
           title="Hamilton Salon Location"
-  	  src="https://maps.google.com/maps?q=Hamilton&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-  	  height="350" 
-  	  style="border:0; width:100%;" 
-  	  allowfullscreen="" 
-  	  loading="lazy">
+          src="https://maps.google.com/maps?q=Hamilton&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+          height="350" 
+          style="border:0; width:100%;" 
+          allowfullscreen="" 
+          loading="lazy">
         </iframe>
       </div>
     </section>

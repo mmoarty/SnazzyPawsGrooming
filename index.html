@@ -1,69 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Request a Booking - Snazzy Paws Grooming</title>
-  <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Dog Grooming in Hamilton | Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Snazzy Paws Grooming</div>
-      <!-- Use a checkbox and label for pure CSS toggling instead of functional JS[cite: 10]-->
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu input">
-      <!--ACCESSIBILITY: CSS with .visually-hidden class. Hide elements, readable to screen readers[cite: 10]-->
-      <label for="nav-toggle" class="hamburger-menu"><span class="visually-hidden"></span>☰</label>            
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="booking.html">Booking</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>        
+        <nav>
+            <div class="logo">Snazzy Paws Grooming</div>
+            <!-- Use a checkbox and label for pure CSS toggling instead of functional JS[cite: 10]-->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu input">
+	    <!--ACCESSIBILITY: CSS with .visually-hidden class. Hide elements, readable to screen readers[cite: 10]-->
+	    <label for="nav-toggle" class="hamburger-menu">
+  <span class="visually-hidden"></span>☰</label>            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section class="booking-container">
-      <h1>Request a Booking</h1>
-      <form action="#" method="post" class="booking-form">
-        <div class="form-group owner-details">
-          <label for="owner-name">Owner Name</label>
-          <input type="text" id="owner-name" name="owner_name" required>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Professional Dog Grooming in Hamilton[cite: 10]</h1>
+            <a href="booking.html" class="cta-button">Book an Appointment</a>
+        </section>
 
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" required>
+        <!-- Value Proposition -->
+        <section class="value-proposition">
+            <div class="column">
+                <h2>Certified Groomers[cite: 10]</h2>
+            </div>
+            <div class="column">
+                <h2>Safe Medicated Treatments[cite: 10]</h2>
+            </div>
+            <div class="column">
+                <h2>Stress-Free Environment[cite: 10]</h2>
+            </div>
+        </section>
 
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required>
-        </div>
+        <!-- Quick Intro -->
+        <section class="quick-intro">
+            <div class="intro-text">
+                <h2>About Our Salon[cite: 10]</h2>
+                <p>Welcome to our professional grooming salon in Hamilton, offering high-quality care for your pets...</p>
+            </div>
+            <div class="intro-image">
+                <img src="images/happy-dog.jpg" alt="A golden retriever dog sitting happily after receiving professional grooming at the salon[cite: 10]">
+            </div>
+        </section>
 
-        <div class="form-group pet-details">
-          <label for="pet-name">Pet Name</label>
-          <input type="text" id="pet-name" name="pet_name" required>
+        <!-- Our 4-Step Process Section -->
+        <section class="our-process">
+            <h2>Our Grooming Process[cite: 10]</h2>
+            <div class="process-steps">
+                <article class="step">
+                    <h3>1. Arrival & Check-In</h3>
+                    <p>We perform a quick coat assessment and discuss any specific requests or health concerns.</p>
+                </article>
+                <article class="step">
+                    <h3>2. Relaxing Bath</h3>
+                    <p>Gentle washing using premium, coat-safe shampoos and warm water treatments.</p>
+                </article>
+                <article class="step">
+                    <h3>3. Precision Styling</h3>
+                    <p>Detailed clipping, brushing, and trimming tailored to your dog's breed standards.</p>
+                </article>
+                <article class="step">
+                    <h3>4. Final Inspection</h3>
+                    <p>Nail trimming, ear cleaning, and a final check to ensure your pet leaves looking snazzy!</p>
+                </article>
+            </div>
+        </section>
 
-          <label for="breed">Breed</label>
-          <input type="text" id="breed" name="breed" required>
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-cards">
+                <blockquote class="card">
+                    <p>"Snazzy Paws treated my golden retriever like royalty! Highly recommended."</p>
+                    <cite>- Sarah M.</cite>
+                </blockquote>
+                <blockquote class="card">
+                    <p>"Best grooming experience in Hamilton. Friendly staff and great care."</p>
+                    <cite>- David K.</cite>
+                </blockquote>
+            </div>
+        </section>
 
-          <label for="slot">Preferred Date/Time Slot</label>
-          <input type="datetime-local" id="slot" name="slot" required>
+        <!-- Frequently Asked Questions -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <article class="faq-item">
+                <h3>How long does a grooming session take?</h3>
+                <p>Most full grooming sessions take between 1.5 to 3 hours depending on size and coat condition.</p>
+            </article>
+            <article class="faq-item">
+                <h3>Do I need to book in advance?</h3>
+                <p>Yes, we recommend booking at least 3-5 days in advance to secure your preferred slot.</p>
+            </article>
+        </section>
+    </main>
 
-          <label for="package">Package Selection</label>
-          <select id="package" name="package">
-            <option value="bathing">Bathing</option>
-            <option value="full-clip">Full Clip</option>
-            <option value="nail-trimming">Nail Trimming</option>
-          </select>
-        </div>
-
-        <button type="submit" class="submit-btn">Submit Booking Request</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>Hours: Mon-Sat, 9 am - 5 pm</p>
-  </footer>
+    <footer>
+        <p>Hours: Mon-Sat, 9 am - 5 pm</p>
+    </footer>
 </body>
 </html>

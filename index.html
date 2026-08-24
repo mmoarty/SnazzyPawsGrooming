@@ -1,115 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Dog Grooming in Hamilton | Home</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional dog grooming services in Hamilton offering certified groomers, safe medicated treatments, and a stress-free environment.">
+  <title>Professional Dog Grooming in Hamilton | Home</title>
+  <!-- W3.CSS Framework stylesheet -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <header>        
-        <nav>
-            <div class="logo">Snazzy Paws Grooming</div>
-            <!-- Use a checkbox and label for pure CSS toggling instead of functional-->
-            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu input">
-	    <!--ACCESSIBILITY: CSS with .visually-hidden class. Hide elements, readable to screen readers-->
-	    <label for="nav-toggle" class="hamburger-menu">
-  <span class="visually-hidden"></span>☰</label>            
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="booking.html">Booking</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="w3-light-grey">
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1>Professional Dog Grooming in Hamilton</h1>
-            <a href="booking.html" class="cta-button">Book an Appointment</a>
-        </section>
+  <!-- Header / Navigation Section -->
+  <header>
+    <nav class="w3-bar w3-black w3-card">
+      <div class="w3-bar-item w3-large"><b>Snazzy Paws Grooming</b></div>
+      <div class="w3-right w3-hide-small">
+        <a href="index.html" class="w3-bar-item w3-button w3-dark-grey">Home</a>
+        <a href="services.html" class="w3-bar-item w3-button">Services</a>
+        <a href="booking.html" class="w3-bar-item w3-button">Booking</a>
+        <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+        <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+        <a href="roster.html" class="w3-bar-item w3-button">Staff Roster</a>
+        <a href="privacy.html" class="w3-bar-item w3-button">Privacy Policy</a>
+      </div>
+    </nav>
+  </header>
 
-        <!-- Value Proposition -->
-        <section class="value-proposition">
-            <div class="column">
-                <h2>Certified Groomers</h2>
-            </div>
-            <div class="column">
-                <h2>Safe Medicated Treatments</h2>
-            </div>
-            <div class="column">
-                <h2>Stress-Free Environment</h2>
-            </div>
-        </section>
+  <!-- Main Content Section -->
+  <main class="w3-container w3-content w3-padding-32" style="max-width:1100px">
+    
+    <!-- Hero Section -->
+    <section class="w3-center w3-padding-32 w3-white w3-card-4 w3-round w3-margin-bottom">
+      <div class="w3-container">
+        <h1 class="w3-text-teal"><b>Professional Dog Grooming in Hamilton</b></h1>
+        <a href="booking.html" class="w3-button w3-green w3-padding-large w3-round w3-margin-top"><b>Book an Appointment</b></a>
+      </div>
+    </section>
 
-        <!-- Quick Intro -->
-        <section class="quick-intro">
-            <div class="intro-text">
-                <h2>About Our Salon</h2>
-                <p>Welcome to our professional grooming salon in Hamilton, offering high-quality care for your pets.</p>
-            </div>
-            <div class="intro-image">
-                <img src="images/happy-dog.jpg" alt="A golden retriever dog sitting happily after receiving professional grooming at the salon">
-            </div>
-        </section>
+    <!-- Value Proposition -->
+    <section class="w3-row-padding w3-margin-bottom" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding w3-center w3-round" style="min-height:120px;">
+          <h3 class="w3-text-teal">Certified Groomers</h3>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding w3-center w3-round" style="min-height:120px;">
+          <h3 class="w3-text-teal">Safe Medicated Treatments</h3>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding w3-center w3-round" style="min-height:120px;">
+          <h3 class="w3-text-teal">Stress-Free Environment</h3>
+        </div>
+      </div>
+    </section>
 
-        <!-- Our 4-Step Process Section -->
-        <section class="our-process">
-            <h2>Our Grooming Process</h2>
-            <div class="process-steps">
-                <article class="step">
-                    <h3>1. Arrival & Check-In</h3>
-                    <p>We perform a quick coat assessment and discuss any specific requests or health concerns.</p>
-                </article>
-                <article class="step">
-                    <h3>2. Relaxing Bath</h3>
-                    <p>Gentle washing using premium, coat-safe shampoos and warm water treatments.</p>
-                </article>
-                <article class="step">
-                    <h3>3. Precision Styling</h3>
-                    <p>Detailed clipping, brushing, and trimming tailored to your dog's breed standards.</p>
-                </article>
-                <article class="step">
-                    <h3>4. Final Inspection</h3>
-                    <p>Nail trimming, ear cleaning, and a final check to ensure your pet leaves looking snazzy!</p>
-                </article>
-            </div>
-        </section>
+    <!-- Quick Intro -->
+    <section class="w3-row-padding w3-white w3-card-4 w3-round w3-padding-16 w3-margin-bottom" style="align-items:center;">
+      <div class="w3-half w3-padding">
+        <h2 class="w3-text-teal"><b>About Our Salon</b></h2>
+        <p>Welcome to our professional grooming salon in Hamilton, offering high-quality care for your pets.</p>
+      </div>
+      <div class="w3-half w3-padding">
+        <img src="images/happy-dog.jpg" alt="A golden retriever dog sitting happily after receiving professional grooming at the salon" class="w3-image w3-round">
+      </div>
+    </section>
 
-        <!-- Testimonials Section -->
-        <section class="testimonials">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonial-cards">
-                <blockquote class="card">
-                    <p>"Snazzy Paws treated my golden retriever like royalty! Highly recommended."</p>
-                    <cite>- Sarah M.</cite>
-                </blockquote>
-                <blockquote class="card">
-                    <p>"Best grooming experience in Hamilton. Friendly staff and great care."</p>
-                    <cite>- David K.</cite>
-                </blockquote>
-            </div>
-        </section>
+    <!-- Our 4-Step Process Section -->
+    <section class="w3-container w3-white w3-card-4 w3-round w3-padding-32 w3-margin-bottom">
+      <h2 class="w3-center w3-text-teal"><b>Our Grooming Process</b></h2>
+      <div class="w3-row-padding w3-margin-top">
+        <div class="w3-quarter w3-margin-bottom">
+          <div class="w3-border w3-padding w3-round" style="min-height:180px;">
+            <h3 class="w3-text-dark-grey"><b>1. Arrival & Check-In</b></h3>
+            <p>We perform a quick coat assessment and discuss any specific requests or health concerns.</p>
+          </div>
+        </div>
+        <div class="w3-quarter w3-margin-bottom">
+          <div class="w3-border w3-padding w3-round" style="min-height:180px;">
+            <h3 class="w3-text-dark-grey"><b>2. Relaxing Bath</b></h3>
+            <p>Gentle washing using premium, coat-safe shampoos and warm water treatments.</p>
+          </div>
+        </div>
+        <div class="w3-quarter w3-margin-bottom">
+          <div class="w3-border w3-padding w3-round" style="min-height:180px;">
+            <h3 class="w3-text-dark-grey"><b>3. Precision Styling</b></h3>
+            <p>Detailed clipping, brushing, and trimming tailored to your dog's breed standards.</p>
+          </div>
+        </div>
+        <div class="w3-quarter w3-margin-bottom">
+          <div class="w3-border w3-padding w3-round" style="min-height:180px;">
+            <h3 class="w3-text-dark-grey"><b>4. Final Inspection</b></h3>
+            <p>Nail trimming, ear cleaning, and a final check to ensure your pet leaves looking snazzy!</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Frequently Asked Questions -->
-        <section class="faq-section">
-            <h2>Frequently Asked Questions</h2>
-            <article class="faq-item">
-                <h3>How long does a grooming session take?</h3>
-                <p>Most full grooming sessions take between 1.5 to 3 hours depending on size and coat condition.</p>
-            </article>
-            <article class="faq-item">
-                <h3>Do I need to book in advance?</h3>
-                <p>Yes, we recommend booking at least 3-5 days in advance to secure your preferred slot.</p>
-            </article>
-        </section>
-    </main>
+    <!-- Testimonials Section -->
+    <section class="w3-container w3-white w3-card-4 w3-round w3-padding-32 w3-margin-bottom">
+      <h2 class="w3-center w3-text-teal"><b>What Our Clients Say</b></h2>
+      <div class="w3-row-padding">
+        <div class="w3-half w3-margin-bottom">
+          <blockquote class="w3-border-left w3-border-teal w3-padding w3-light-grey w3-round" style="font-style:italic;">
+            <p>"Snazzy Paws treated my golden retriever like royalty! Highly recommended."</p>
+            <cite class="w3-text-teal" style="display:block; margin-top:5px; font-weight:bold; font-style:normal;">- Sarah M.</cite>
+          </blockquote>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <blockquote class="w3-border-left w3-border-teal w3-padding w3-light-grey w3-round" style="font-style:italic;">
+            <p>"Best grooming experience in Hamilton. Friendly staff and great care."</p>
+            <cite class="w3-text-teal" style="display:block; margin-top:5px; font-weight:bold; font-style:normal;">- David K.</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-        <p>Hours: Mon-Sat, 9 am - 5 pm</p>
-    </footer>
+    <!-- Frequently Asked Questions -->
+    <section class="w3-container w3-white w3-card-4 w3-round w3-padding-32">
+      <h2 class="w3-center w3-text-teal"><b>Frequently Asked Questions</b></h2>
+      <div class="w3-section">
+        <h3 class="w3-text-dark-grey"><b>How long does a grooming session take?</b></h3>
+        <p>Most full grooming sessions take between 1.5 to 3 hours depending on size and coat condition.</p>
+      </div>
+      <div class="w3-section">
+        <h3 class="w3-text-dark-grey"><b>Do I need to book in advance?</b></h3>
+        <p>Yes, we recommend booking at least 3-5 days in advance to secure your preferred slot.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="w3-container w3-center w3-black w3-padding-16 w3-margin-top">
+    <p>&copy; 2026 Snazzy Paws Grooming. Hours: Mon-Sat, 9 am - 5 pm</p>
+  </footer>
+
 </body>
 </html>

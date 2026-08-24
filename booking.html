@@ -3,70 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request an online booking appointment with Snazzy Paws Grooming for professional dog grooming services in Hamilton.">
   <title>Request a Booking - Snazzy Paws Grooming</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <!-- W3.CSS Framework stylesheet -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Optional custom styles or font icons if needed -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="w3-light-grey">
+
+  <!-- Header / Navigation Section -->
   <header>
-    <nav>
-      <div class="logo">Snazzy Paws Grooming</div>
-      <!-- Use a checkbox and label for pure CSS toggling instead of functional-->
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu input">
-      <!--ACCESSIBILITY: CSS with .visually-hidden class. Hide elements, readable to screen readers. <span> necessary-->
-      <label for="nav-toggle" class="hamburger-menu">
-  <span class="visually-hidden"></span>☰</label>            
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="booking.html">Booking</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav class="w3-bar w3-black w3-card">
+      <div class="w3-bar-item w3-large"><b>Snazzy Paws Grooming</b></div>
+      
+      <!-- Hamburger toggle checkbox for responsive mobile navigation -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu input" style="display:none;">
+      
+      <!-- Navigation links container styled with W3.CSS bar items -->
+      <div class="w3-right w3-hide-small">
+        <a href="index.html" class="w3-bar-item w3-button w3-dark-grey">Home</a>
+        <a href="services.html" class="w3-bar-item w3-button">Services</a>
+        <a href="booking.html" class="w3-bar-item w3-button">Booking</a>
+        <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+        <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+        <a href="roster.html" class="w3-bar-item w3-button">Staff Roster</a>
+        <a href="privacy.html" class="w3-bar-item w3-button">Privacy Policy</a>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <section class="booking-container">
-      <h1>Request a Booking</h1>
-      <form action="#" method="post" class="booking-form">
-        <!-- Left Column / Section 1 -->
-        <div class="form-group owner-details">
-          <label for="owner-name">Owner Name</label>
-          <input type="text" id="owner-name" name="owner_name" required>
+  <!-- Main Content Section -->
+  <main class="w3-container w3-content w3-padding-32" style="max-width:800px">
+    
+    <!-- Booking Form Card Container -->
+    <div class="w3-card-4 w3-white w3-padding-64 w3-margin-top">
+      <div class="w3-container">
+        <h1 class="w3-center w3-text-teal"><b>Request a Booking</b></h1>
+        <p class="w3-center">Fill out the form below to book an appointment for your pet.</p>
+        
+        <form action="#" method="post" class="w3-container">
+          
+          <!-- Owner Details Section -->
+          <fieldset class="w3-section w3-light-grey w3-padding w3-border">
+            <legend class="w3-text-dark-grey"><b>Owner Details</b></legend>
+            
+            <label for="owner-name" class="w3-text-dark-grey">Owner Name</label>
+            <input type="text" id="owner-name" name="owner_name" class="w3-input w3-border w3-round" required>
 
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" required>
+            <label for="phone" class="w3-text-dark-grey">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="w3-input w3-border w3-round" required>
 
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required>
-        </div>
+            <label for="email" class="w3-text-dark-grey">Email Address</label>
+            <input type="email" id="email" name="email" class="w3-input w3-border w3-round" required>
+          </fieldset>
 
-        <!-- Right Column / Section 2 -->
-        <div class="form-group pet-details">
-          <label for="pet-name">Pet Name</label>
-          <input type="text" id="pet-name" name="pet_name" required>
+          <!-- Pet Details & Appointment Section -->
+          <fieldset class="w3-section w3-light-grey w3-padding w3-border">
+            <legend class="w3-text-dark-grey"><b>Pet & Service Details</b></legend>
 
-          <label for="breed">Breed</label>
-          <input type="text" id="breed" name="breed" required>
+            <label for="pet-name" class="w3-text-dark-grey">Pet Name</label>
+            <input type="text" id="pet-name" name="pet_name" class="w3-input w3-border w3-round" required>
 
-          <label for="slot">Preferred Date/Time Slot</label>
-          <input type="datetime-local" id="slot" name="slot" required>
+            <label for="breed" class="w3-text-dark-grey">Breed</label>
+            <input type="text" id="breed" name="breed" class="w3-input w3-border w3-round" required>
 
-          <label for="package">Package Selection</label>
-          <select id="package" name="package">
-            <option value="bathing">Bathing</option>
-            <option value="full-clip">Full Clip</option>
-            <option value="nail-trimming">Nail Trimming</option>
-          </select>
-        </div>
+            <label for="slot" class="w3-text-dark-grey">Preferred Date/Time Slot</label>
+            <input type="datetime-local" id="slot" name="slot" class="w3-input w3-border w3-round" required>
 
-        <button type="submit" class="submit-btn">Submit Booking Request</button>
-      </form>
-    </section>
+            <label for="package" class="w3-text-dark-grey">Package Selection</label>
+            <select id="package" name="package" class="w3-select w3-border w3-round">
+              <option value="bathing">Bathing</option>
+              <option value="full-clip">Full Clip</option>
+              <option value="nail-trimming">Nail Trimming</option>
+            </select>
+          </fieldset>
+
+          <!-- Submit Button -->
+          <button type="submit" class="w3-button w3-teal w3-block w3-section w3-padding-16 w3-round">Submit Booking Request</button>
+        
+        </form>
+      </div>
+    </div>
   </main>
 
-  <footer>
-    <p>Hours: Mon-Sat, 9 am - 5 pm</p>
+  <!-- Footer Section -->
+  <footer class="w3-container w3-center w3-black w3-padding-16 w3-margin-top">
+    <p>&copy; 2026 Snazzy Paws Grooming. Hours: Mon-Sat, 9 am - 5 pm</p>
   </footer>
+
 </body>
 </html>

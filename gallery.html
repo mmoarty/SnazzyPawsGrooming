@@ -3,83 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visual gallery and educational blog hub featuring dog grooming tips, coat maintenance, and care advice from Snazzy Paws Grooming.">
     <title>Gallery & Educational Hub - Snazzy Paws Grooming</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="w3-light-grey">
     <header>        
-        <nav>
-            <div class="logo">Snazzy Paws Grooming</div>
-            <!-- Use a checkbox and label for pure CSS toggling instead of functional-->
-            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu input">
-            <!--ACCESSIBILITY: CSS with .visually-hidden class. Hide elements, readable to screen readers-->
-            <label for="nav-toggle" class="hamburger-menu">
-  <span class="visually-hidden"></span>☰</label>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="booking.html">Booking</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="w3-bar w3-black w3-card">
+            <div class="w3-bar-item w3-large"><b>Snazzy Paws Grooming</b></div>
+            <div class="w3-right w3-hide-small">
+                <a href="index.html" class="w3-bar-item w3-button">Home</a>
+                <a href="services.html" class="w3-bar-item w3-button">Services</a>
+                <a href="booking.html" class="w3-bar-item w3-button">Booking</a>
+                <a href="gallery.html" class="w3-bar-item w3-button w3-dark-grey">Gallery</a>
+                <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+                <a href="roster.html" class="w3-bar-item w3-button">Staff Roster</a>
+                <a href="privacy.html" class="w3-bar-item w3-button">Privacy Policy</a>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <!-- Section A: Visual Gallery (4x4 Grid - 16 Images Required by Assessment) -->
-        <section class="gallery-section">
-            <h1>Gallery & Educational Hub</h1>
-            <h2>Visual Gallery</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="images/gallery-1.jpg" alt="Golden retriever sitting patiently on a white studio floor"></div>
-                <div class="gallery-item"><img src="images/gallery-2.jpg" alt="Groomer carefully clipping a small dog paws"></div>
-                <div class="gallery-item"><img src="images/gallery-3.jpg" alt="Dog standing inside a stainless steel professional washing tub"></div>
-                <div class="gallery-item"><img src="images/gallery-4.jpg" alt="Close up of a groomer grinding a dogs nails with an electric tool"></div>
-                <div class="gallery-item"><img src="images/gallery-5.jpg" alt="Groomer cleaning a Basset Hounds long floppy ear"></div>
-                <div class="gallery-item"><img src="images/gallery-6.jpg" alt="Curious beagle holding a blue toothbrush in its mouth"></div>
-                <div class="gallery-item"><img src="images/gallery-7.jpg" alt="Fluffy cream colored puppy sitting on green grass"></div>
-                <div class="gallery-item"><img src="images/gallery-8.jpg" alt="Small dog resting comfortably wrapped in a soft blanket"></div>
-                <div class="gallery-item"><img src="images/gallery-9.jpg" alt="Small white terrier standing alert indoors"></div>
-                <div class="gallery-item"><img src="images/gallery-10.jpg" alt="White Samoyed dog running outdoors in a park"></div>
-                <div class="gallery-item"><img src="images/gallery-11.jpg" alt="Two white fluffy companion dogs sitting side by side"></div>
-                <div class="gallery-item"><img src="images/gallery-12.jpg" alt="Customer checking in at a modern pet grooming reception desk"></div>
-                <div class="gallery-item"><img src="images/gallery-13.jpg" alt="Groomer using a blow dryer on a fluffy husky mix"></div>
-                <div class="gallery-item"><img src="images/gallery-14.jpg" alt="Golden retriever sitting calmly on a grooming table"></div>
-                <div class="gallery-item"><img src="images/gallery-15.jpg" alt="Small dog resting with a decorative floral garland around its neck"></div>
-                <div class="gallery-item"><img src="images/gallery-16.jpg" alt="Pug sitting neatly on a wooden stool inside the grooming salon"></div>
+    <main class="w3-container w3-content w3-padding-32" style="max-width:1200px">
+        
+        <!-- Section A: Visual Gallery (4x4 Grid - 16 Images) -->
+        <section class="w3-card-4 w3-white w3-padding-32 w3-round w3-margin-bottom">
+            <div class="w3-container">
+                <h1 class="w3-center w3-text-teal"><b>Gallery & Educational Hub</b></h1>
+                <h2 class="w3-text-dark-grey"><b>Visual Gallery</b></h2>
+                
+                <div class="w3-row-padding w3-margin-top" style="margin:0 -8px">
+                    <div class="w3-col l3 m4 s6 w3-margin-bottom"><div class="w3-card w3-padding-small"><img src="images/gallery-1.jpg" alt="Golden retriever sitting patiently on a white studio floor" style="width:100%; height:180px; object-fit:cover;" class="w3-round"></div></div>
+                    <div class="w3-col l3 m4 s6 w3-margin-bottom"><div class="w3-card w3-padding-small"><img src="images/gallery-2.jpg" alt="Groomer carefully clipping a small dog paws" style="width:100%; height:180px; object-fit:cover;" class="w3-round"></div></div>
+                    <div class="w3-col l3 m4 s6 w3-margin-bottom"><div class="w3-card w3-padding-small"><img src="images/gallery-3.jpg" alt="Dog standing inside a stainless steel professional washing tub" style="width:100%; height:180px; object-fit:cover;" class="w3-round"></div></div>
+                    <div class="w3-col l3 m4 s6 w3-margin-bottom"><div class="w3-card w3-padding-small"><img src="images/gallery-4.jpg" alt="Close up of a groomer grinding a dogs nails with an electric tool" style="width:100%; height:180px; object-fit:cover;" class="w3-round"></div></div>
+                    <div class="w3-col l3 m4 s6 w3-margin-bottom"><div class="w3-card w3-padding-small"><img src="images/gallery-5.jpg" alt="Groomer cleaning a Basset Hounds long floppy ear" style="width:100%; height:180px; object-fit:cover;" class="w3-round"></div></div>
+                    <div class="w3-col l3 m4 s6 w3-margin-bottom"><div class="w3-card w3-padding-small"><img src="images/gallery-6.jpg" alt="Curious beagle holding a blue toothbrush in its mouth" style="width:100%; height:180px; object-fit:cover;" class="w3-round"></div></div>
+                    <div class="w3-col l3 m4 s6 w3-margin-bottom"><div class="w3-card w3-padding-small"><img src="images/gallery-7.jpg" alt="Fluffy cream colored puppy sitting on green grass" style="width:100%; height:180px; object-fit:cover;" class="w3-round"></div></div>
+                    <div class="w3-col l3 m4 s6 w3-margin-bottom"><div class="w3-card w3-padding-small"><img src="images/gallery-8.jpg" alt="Small dog resting comfortably wrapped in a soft blanket" style="width:100%; height:180px; object-fit:cover;" class="w3-round"></div></div>
+                    <div class="w3-col l3 m4 s6 w3-margin-bottom"><div class="w3-card w3-padding-small"><img src="images/gallery-9.jpg" alt="Small white terrier standing alert indoors" style="width:100%; height:180px; object-fit:cover;" class="w3-round"></div></div>
+                    <div class="w3-col l3 m4 s6 w3-margin-bottom"><div class="w3-card w3-padding-small"><img src="images/gallery-10.jpg" alt="White Samoyed dog running outdoors in a park" style="width:100%; height:180px; object-fit:cover;" class="w3-round"></div></div>
+                    <div class="w3-col l3 m4 s6 w3-margin-bottom"><div class="w3-card w3-padding-small"><img src="images/gallery-11.jpg" alt="Two white fluffy companion dogs sitting side by side" style="width:100%; height:180px; object-fit:cover;" class="w3-round"></div></div>
+                    <div class="w3-col l3 m4 s6 w3-margin-bottom"><div class="w3-card w3-padding-small"><img src="images/gallery-12.jpg" alt="Customer checking in at a modern pet grooming reception desk" style="width:100%; height:180px; object-fit:cover;" class="w3-round"></div></div>
+                    <div class="w3-col l3 m4 s6 w3-margin-bottom"><div class="w3-card w3-padding-small"><img src="images/gallery-13.jpg" alt="Groomer using a blow dryer on a fluffy husky mix" style="width:100%; height:180px; object-fit:cover;" class="w3-round"></div></div>
+                    <div class="w3-col l3 m4 s6 w3-margin-bottom"><div class="w3-card w3-padding-small"><img src="images/gallery-14.jpg" alt="Golden retriever sitting calmly on a grooming table" style="width:100%; height:180px; object-fit:cover;" class="w3-round"></div></div>
+                    <div class="w3-col l3 m4 s6 w3-margin-bottom"><div class="w3-card w3-padding-small"><img src="images/gallery-15.jpg" alt="Small dog resting with a decorative floral garland around its neck" style="width:100%; height:180px; object-fit:cover;" class="w3-round"></div></div>
+                    <div class="w3-col l3 m4 s6 w3-margin-bottom"><div class="w3-card w3-padding-small"><img src="images/gallery-16.jpg" alt="Pug sitting neatly on a wooden stool inside the grooming salon" style="width:100%; height:180px; object-fit:cover;" class="w3-round"></div></div>
+                </div>
             </div>
         </section>
 
         <!-- Section B: Educational Blog Hub -->
-        <section class="blog-hub">
-            <h2>Educational Blog Hub</h2>
-            <div class="blog-grid">
-                <article class="blog-post">
-                    <h3>Coat Maintenance Tips</h3>
-                    <p class="summary">Learn the best daily practices for keeping your dog's coat healthy, shiny, and tangle-free...</p>
-                    <button class="read-more-btn">Read More</button>
-                </article>
-                <article class="blog-post">
-                    <h3>De-matting Best Practices</h3>
-                    <p class="summary">Safe techniques to address mats and tangles without causing distress or pain to your pet...</p>
-                    <button class="read-more-btn">Read More</button>
-                </article>
-                <article class="blog-post">
-                    <h3>Seasonal Shedding Solutions</h3>
-                    <p class="summary">How to manage heavy seasonal undercoat blowout with proper bathing and deshedding tools...</p>
-                    <button class="read-more-btn">Read More</button>
-                </article>
-                <article class="blog-post">
-                    <h3>Nail Care & Health</h3>
-                    <p class="summary">Understanding why keeping your dog's quick trimmed regularly protects their posture and mobility...</p>
-                    <button class="read-more-btn">Read More</button>
-                </article>
+        <section class="w3-card-4 w3-white w3-padding-32 w3-round">
+            <div class="w3-container">
+                <h2 class="w3-text-dark-grey"><b>Educational Blog Hub</b></h2>
+                <div class="w3-row-padding w3-margin-top" style="margin:0 -16px">
+                    <div class="w3-half w3-margin-bottom">
+                        <article class="w3-border w3-padding w3-round" style="min-height:160px;">
+                            <h3 class="w3-text-teal"><b>Coat Maintenance Tips</b></h3>
+                            <p>Learn the best daily practices for keeping your dog's coat healthy, shiny, and tangle-free...</p>
+                            <button class="w3-button w3-teal w3-round w3-small">Read More</button>
+                        </article>
+                    </div>
+                    <div class="w3-half w3-margin-bottom">
+                        <article class="w3-border w3-padding w3-round" style="min-height:160px;">
+                            <h3 class="w3-text-teal"><b>De-matting Best Practices</b></h3>
+                            <p>Safe techniques to address mats and tangles without causing distress or pain to your pet...</p>
+                            <button class="w3-button w3-teal w3-round w3-small">Read More</button>
+                        </article>
+                    </div>
+                    <div class="w3-half w3-margin-bottom">
+                        <article class="w3-border w3-padding w3-round" style="min-height:160px;">
+                            <h3 class="w3-text-teal"><b>Seasonal Shedding Solutions</b></h3>
+                            <p>How to manage heavy seasonal undercoat blowout with proper bathing and deshedding tools...</p>
+                            <button class="w3-button w3-teal w3-round w3-small">Read More</button>
+                        </article>
+                    </div>
+                    <div class="w3-half w3-margin-bottom">
+                        <article class="w3-border w3-padding w3-round" style="min-height:160px;">
+                            <h3 class="w3-text-teal"><b>Nail Care & Health</b></h3>
+                            <p>Understanding why keeping your dog's quick trimmed regularly protects their posture and mobility...</p>
+                            <button class="w3-button w3-teal w3-round w3-small">Read More</button>
+                        </article>
+                    </div>
+                </div>
             </div>
         </section>
+
     </main>
 
-    <footer>
-        <p>Hours: Mon-Sat, 9 am - 5 pm</p>
+    <footer class="w3-container w3-center w3-black w3-padding-16 w3-margin-top">
+        <p>&copy; 2026 Snazzy Paws Grooming. Hours: Mon-Sat, 9 am - 5 pm</p>
     </footer>
 </body>
 </html>

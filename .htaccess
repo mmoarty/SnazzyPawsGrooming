@@ -1,0 +1,8 @@
+AuthType Basic
+AuthName "Restricted Access - Snazzy Paws Staff Roster Only"
+AuthBasicProvider file
+AuthUserFile "C:/UniServerZ/UniServerZ/www/SnazzyPawsGrooming/.htpasswd"
+
+<Files "roster.html">
+    Require valid-user
+</Files>

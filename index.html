@@ -151,5 +151,17 @@
     <p>&copy; 2026 Snazzy Paws Grooming. Hours: Mon-Sat, 9 am - 5 pm</p>
   </footer>
 
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    function toggleNav() {
+      var x = document.getElementById("mobile-nav");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
 </body>
 </html>
